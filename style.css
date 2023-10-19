@@ -1,4 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider__item {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.slider__item img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider__item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slider__item.slide__prev {
+    opacity: 0;
+    transform: translateX(-100%);
 }
