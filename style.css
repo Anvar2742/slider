@@ -11,7 +11,9 @@ body {
 .slider {
     display: flex;
     position: relative;
+    width: 700px;
     height: 400px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
